@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: wheat;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-size: medium;
+        color: black;
+      }
+
+      .nav-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn1 {
+        padding: 8px;
+        font-size: medium;
+        border-radius: 20px;
+        border: none;
+        background-color: white;
+      }
+
+      .btn2 {
+        padding: 8px;
+        font-size: medium;
+        border-radius: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+      }
+
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 40px;
+        gap: 40px;
+      }
+
+      h1 {
+        font-size: 55px;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+
+      .btn3 {
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: medium;
+        border: none;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+      }
+
+      .btn4 {
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: medium;
+        border: solid green 2px;
+        border-radius: 20px;
+        background-color: greenyellow;
+      }
+
+      .hero-left {
+        flex: 1;
+        max-width: 500px;
+      }
+
+      .hero-left button {
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+      .hero-right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .hero-right img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+      }
+
+      .form-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px 60px;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 500px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .form-container .subtitle {
+      text-align: center;
+      margin: 0 0 25px;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: green;
+    }
+
+    .form-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .close-btn,
+    .Book Now-btn {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .Book Now-btn {
+      background-color: black;
+      color: white;
+    }
+
+    .close-btn:hover {
+      background-color: #bbb;
+    }
+
+    .Book Now-btn:hover {
+      background-color: green;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.jpg" alt="logo" width="100px" height="100px" style="border-radius: 80%;" />
+        </div>
+
+        <div class="nav-links">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Programs</a>
+          <a href="">Contact</a>
+          <a href="">Location</a>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn1">Get The App</button>
+          <button class="btn2">Book Now</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero-left">
+          <h1>
+            Transform
+            <i
+              >your<br />
+              body</i
+            >
+            and mind
+          </h1>
+          <p>
+            Build strength, find balance, and unlock your full potential with
+            guided fitness and mindful living.
+          </p>
+   <button class="btn3">Join Member</button>
+    <button class="btn4">Start for free</button>
+   </div>
+      <div class="hero-right">
+          <img src="nature.jpg" alt="this is an nature's image." />
+        </div>
+      </section>
+   <div class="form-section" id="formbox">
+      <div class="form-container">
+    <h2>Book your Program</h2>
+     
+
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="number">Phone Number</label>
+            <input
+              type="tel"
+              id="number"
+              name="number"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="program">Select Program</label>
+            <select id="program" name="program" required>
+              <option value="" disabled selected>
+                Choose a program
+              </option>
+              <option value="yoga">Yoga</option>
+              <option value="fitness">Fitness Training</option>
+              <option value="meditation">Meditation</option>
+              <option value="weight-loss">Weight Loss</option>
+              <option value="personal-training">Personal Training</option>
+            </select>
+          </div>
+
+          <div class="form-buttons">
+            <button type="reset" class="close-btn" id="closeButton">Close</button>
+            <button type="submit" class="Book Now-btn" id="bookButton">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  </body>
+</html>

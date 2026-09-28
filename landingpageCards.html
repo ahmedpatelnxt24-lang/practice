@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card</title>
+<style>
+*{ box-sizing: border-box; margin: 0; }
+ body {
+ min-height: 80vh;
+  display: grid;
+  place-items: center;
+ background: #cfe6ea;
+}
+
+.card {
+position: relative;
+width: 300px;
+height: 400px;
+border-radius: 22px;
+color: #fff;
+    background-image:url(yoga.jpg),
+      linear-gradient(160deg, #a9a875 0%, #6b6a45 55%, #3d4a44 100%);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 12px 30px rgba(30, 60, 70, 0.25);
+  }
+
+  .heart {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+  }
+
+  .info {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 18px 18px 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1.5px solid rgba(255, 255, 255, 0.85);
+    border-radius:100px;
+    font-size: 10px;    
+    font-weight: 500;
+  }
+
+  .title {
+    margin-top: 14px;
+    padding-right: 56px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 28px;
+    bottom: 60px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2b3a42;
+    display: grid;
+    place-items: center;
+  }
+
+  .arrow svg { width: 22px; height: 22px; }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="heart">🤍</div>
+
+    <div class="info">
+      <span class="tag">Meditation</span>
+      <h2 class="title">Beginner Yoga Flow</h2>
+    </div>
+
+    <a class="arrow" href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 17L17 7M9 7h8v8"/>
+      </svg>
+    </a>
+  </div>
+
+</body>
+</html>
